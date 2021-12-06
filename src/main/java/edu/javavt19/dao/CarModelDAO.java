@@ -1,7 +1,6 @@
 package edu.javavt19.dao;
 
 import edu.javavt19.model.CarModel;
-
 import java.util.List;
 
 public interface CarModelDAO {

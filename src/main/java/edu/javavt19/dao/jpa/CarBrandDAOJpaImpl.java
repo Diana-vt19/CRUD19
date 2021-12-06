@@ -3,7 +3,6 @@ package edu.javavt19.dao.jpa;
 import edu.javavt19.dao.CarBrandDAO;
 import edu.javavt19.model.CarBrand;
 import org.springframework.stereotype.Repository;
-
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import java.util.List;

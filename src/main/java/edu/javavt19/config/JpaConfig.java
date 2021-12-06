@@ -1,5 +1,8 @@
 package edu.javavt19.config;
 
+import javax.persistence.EntityManagerFactory;
+import javax.sql.DataSource;
+
 import edu.javavt19.dao.CarBrandDAO;
 import edu.javavt19.dao.CarModelDAO;
 import edu.javavt19.dao.jpa.CarBrandDAOJpaImpl;
@@ -14,9 +17,6 @@ import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
-
-import javax.persistence.EntityManagerFactory;
-import javax.sql.DataSource;
 
 @Configuration
 @PropertySource(value = {"classpath:application.properties"})

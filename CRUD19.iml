@@ -7,11 +7,18 @@
         <naming-strategy-map />
       </configuration>
     </facet>
-    <facet type="jpa" name="JPA">
+    <facet type="web" name="Web">
       <configuration>
-        <setting name="validation-enabled" value="true" />
-        <datasource-mapping />
-        <naming-strategy-map />
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/web/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/src/main/webapp" relative="/" />
+        </webroots>
+        <sourceRoots>
+          <root url="file://$MODULE_DIR$/src/main/java" />
+          <root url="file://$MODULE_DIR$/src/main/resources" />
+        </sourceRoots>
       </configuration>
     </facet>
     <facet type="Spring" name="Spring">
@@ -22,8 +29,14 @@
         <fileset id="initializer edu.javavt19.config.AppInit root context" name="MVC dispatcher initializer root context" removed="true">
           <file>file://$MODULE_DIR$/src/main/java/edu/javavt19/config/WebConfig.java</file>
         </fileset>
-        <fileset id="fileset" name="Spring Application Context" removed="false">
+        <fileset id="fileset2" name="Spring Application Context (2)" removed="false">
+          <file>file://$MODULE_DIR$/web/WEB-INF/applicationContext.xml</file>
+        </fileset>
+        <fileset id="fileset3" name="Spring Application Context (3)" removed="false">
           <file>file://$MODULE_DIR$/src/main/java/edu/javavt19/config/WebConfig.java</file>
+        </fileset>
+        <fileset id="fileset" name="dispatcher" removed="false">
+          <file>file://$MODULE_DIR$/web/WEB-INF/dispatcher-servlet.xml</file>
         </fileset>
       </configuration>
     </facet>
